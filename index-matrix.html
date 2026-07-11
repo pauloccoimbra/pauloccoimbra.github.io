@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt" data-lang="pt" data-title-pt="Paulo C. Coimbra — root@ufjf" data-title-en="Paulo C. Coimbra — root@ufjf">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paulo C. Coimbra — root@ufjf</title>
+<meta name="description" content="Paulo C. Coimbra — Professor Associado, UFJF. Edição terminal, com efeito de chuva digital.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/matrix-style.css">
+</head>
+<body>
+
+<canvas id="rain" aria-hidden="true"></canvas>
+<div class="scanlines" aria-hidden="true"></div>
+
+<div class="site">
+<header class="nav">
+  <div class="nav-inner">
+    <span class="prompt"><span class="full">root@ufjf:</span><span class="path">~</span>$</span>
+    <nav class="links">
+      <a href="#sobre"><span class="lang-pt">sobre</span><span class="lang-en">about</span></a>
+      <a href="#pesquisa"><span class="lang-pt">pesquisa</span><span class="lang-en">research</span></a>
+      <a href="#publicacoes"><span class="lang-pt">producao</span><span class="lang-en">production</span></a>
+      <a href="#ensino"><span class="lang-pt">ensino</span><span class="lang-en">teaching</span></a>
+      <a href="#extensao"><span class="lang-pt">extensao</span><span class="lang-en">extension</span></a>
+      <a href="#contato"><span class="lang-pt">contato</span><span class="lang-en">contact</span></a>
+    </nav>
+    <div class="nav-controls">
+      <a class="edition-link" href="index.html"><span class="lang-pt">exit → edição padrão</span><span class="lang-en">exit → standard edition</span></a>
+      <button class="term-btn" id="langToggle" aria-label="Switch language / Trocar idioma">EN</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <div class="boot">
+      <span class="lang-pt">
+        &gt; BOOT SEQUENCE INICIADA...<br>
+        &gt; LOADING KNIGHTIAN_UNCERTAINTY.SYS ... <span class="ok">OK</span><br>
+        &gt; LOADING GAME_THEORY.CORE ... <span class="ok">OK</span><br>
+        &gt; MOUNTING B3/WIN-WDO ... <span class="ok">OK</span><br>
+        &gt; ACESSO CONCEDIDO — BEM-VINDO<span class="cursor"></span>
+      </span>
+      <span class="lang-en">
+        &gt; BOOT SEQUENCE INITIATED...<br>
+        &gt; LOADING KNIGHTIAN_UNCERTAINTY.SYS ... <span class="ok">OK</span><br>
+        &gt; LOADING GAME_THEORY.CORE ... <span class="ok">OK</span><br>
+        &gt; MOUNTING B3/WIN-WDO ... <span class="ok">OK</span><br>
+        &gt; ACCESS GRANTED — WELCOME<span class="cursor"></span>
+      </span>
+    </div>
+    <h1>
+      <span class="lang-pt">Economia sob incerteza — da teoria dos jogos <em>aos mercados</em>.</span>
+      <span class="lang-en">Economics under uncertainty — from game theory <em>to the markets</em>.</span>
+    </h1>
+    <p class="hero-role">
+      <span class="lang-pt"><strong>Paulo C. Coimbra</strong> — Departamento de Economia e Finanças, Faculdade de Economia, UFJF. Doutor e Mestre em Economia pela EPGE/FGV-RJ.</span>
+      <span class="lang-en"><strong>Paulo C. Coimbra</strong> — Department of Economics and Finance, School of Economics, UFJF. PhD and MSc in Economics, EPGE/FGV-RJ.</span>
+    </p>
+    <div class="hero-tags">
+      <span class="tag">game_theory</span>
+      <span class="tag">knightian_uncertainty</span>
+      <span class="tag">computational_finance</span>
+      <span class="tag">b3_win_wdo</span>
+    </div>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#pesquisa"><span class="lang-pt">./pesquisa</span><span class="lang-en">./research</span></a>
+      <a class="btn btn-ghost" href="#contato"><span class="lang-pt">./contato</span><span class="lang-en">./contact</span></a>
+    </div>
+  </section>
+
+  <section class="term-panel" id="sobre">
+    <div class="term-titlebar"><span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>&nbsp;&nbsp;whoami</div>
+    <div class="term-body">
+      <p class="cmd"><span class="p">root@ufjf:~$</span> whoami</p>
+      <p class="lang-pt">Professor Associado no Departamento de Economia e Finanças da Faculdade de Economia da UFJF. Pesquisa concentrada em equilíbrio de Nash sob incerteza Knightiana, provisão de bens públicos sob ambiguidade e apreçamento de derivativos — atenção especial ao que acontece quando o agente não dispõe de um único prior probabilístico, mas de um conjunto deles.</p>
+      <p class="lang-en">Associate Professor in the Department of Economics and Finance at UFJF's School of Economics. Research centered on Nash equilibrium under Knightian uncertainty, public goods provision under ambiguity, and derivatives pricing — particular attention to what happens when the agent holds not a single probabilistic prior, but a set of them.</p>
+      <p class="lang-pt">Coordena atividades de extensão pela PROEX/UFJF (QuantEcon, CAEX) e atua paralelamente como quant trader, operando sistemas de negociação sistemática para WIN/WDO na B3 — uma prática que alimenta sua pesquisa sobre o comportamento do trader de varejo brasileiro.</p>
+      <p class="lang-en">Coordinates extension activities through PROEX/UFJF (QuantEcon, CAEX) and works in parallel as a quant trader, running systematic trading systems for WIN/WDO futures on B3 — a practice that feeds directly into his research on Brazilian retail trader behavior.</p>
+      <ul class="facts">
+        <li><span class="k lang-pt">formacao</span><span class="k lang-en">education</span><span class="v">PhD &amp; MSc Economics — EPGE/FGV-RJ</span></li>
+        <li><span class="k lang-pt">instituicao</span><span class="k lang-en">institution</span><span class="v">UFJF — Faculdade de Economia</span></li>
+        <li><span class="k lang-pt">localizacao</span><span class="k lang-en">location</span><span class="v">Juiz de Fora, MG, Brasil</span></li>
+        <li><span class="k lang-pt">extensao</span><span class="k lang-en">extension</span><span class="v">PROEX/UFJF — QuantEcon · CAEX</span></li>
+        <li><span class="k lang-pt">mercado</span><span class="k lang-en">market</span><span class="v">Quant Trader — WIN/WDO, B3</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="term-panel" id="pesquisa">
+    <div class="term-titlebar"><span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>&nbsp;&nbsp;cat research.log</div>
+    <div class="term-body">
+      <p class="cmd"><span class="p">root@ufjf:~$</span> cat research.log</p>
+      <div class="log-entry">
+        <span class="log-tag">[GAME_THEORY]</span>
+        <h3><span class="lang-pt">Teoria dos Jogos &amp; Incerteza Knightiana</span><span class="lang-en">Game Theory &amp; Knightian Uncertainty</span></h3>
+        <p class="lang-pt">Equilíbrio de Nash sob múltiplas prioris (arcabouço Dow–Werlang), provisão de bens públicos sob ambiguidade, e os limites da racionalidade probabilística única.</p>
+        <p class="lang-en">Nash equilibrium under multiple priors (Dow–Werlang framework), public goods provision under ambiguity, and the limits of single-prior probabilistic rationality.</p>
+      </div>
+      <div class="log-entry">
+        <span class="log-tag">[COMP_FINANCE]</span>
+        <h3><span class="lang-pt">Finanças Computacionais &amp; Comportamentais</span><span class="lang-en">Computational &amp; Behavioral Finance</span></h3>
+        <p class="lang-pt">Apreçamento de opções e estrutura a termo, Silicon Sampling — LLMs como sujeitos sintéticos em economia experimental — e o comportamento do trader de varejo brasileiro.</p>
+        <p class="lang-en">Options and term-structure pricing, Silicon Sampling — LLMs as synthetic subjects in experimental economics — and the behavior of Brazilian retail traders.</p>
+      </div>
+      <div class="log-entry">
+        <span class="log-tag">[QUANT_SYSTEMS]</span>
+        <h3><span class="lang-pt">Sistemas Quantitativos de Negociação</span><span class="lang-en">Quantitative Trading Systems</span></h3>
+        <p class="lang-pt">Estratégias sistemáticas para futuros de índice e câmbio na B3: dimensionamento por Kelly, simulação de Monte Carlo em renko, e inteligência diária de mercado.</p>
+        <p class="lang-en">Systematic strategies for index and FX futures on B3: Kelly sizing, Monte Carlo simulation on renko charts, and daily market intelligence.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="term-panel" id="publicacoes">
+    <div class="term-titlebar"><span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>&nbsp;&nbsp;cat publications.log</div>
+    <div class="term-body">
+      <p class="cmd"><span class="p">root@ufjf:~$</span> cat publications.log</p>
+      <div class="tabs" role="tablist">
+        <button class="tab-btn active" data-tab="livros" role="tab" aria-selected="true"><span class="lang-pt">livros</span><span class="lang-en">books</span></button>
+        <button class="tab-btn" data-tab="artigos" role="tab" aria-selected="false"><span class="lang-pt">artigos</span><span class="lang-en">articles</span></button>
+        <button class="tab-btn" data-tab="software" role="tab" aria-selected="false">software</button>
+      </div>
+
+      <div class="tab-panel active" id="panel-livros">
+        <div class="pub"><span class="pub-year">—</span><div><div class="pub-title lang-pt">Derivação de Black-Scholes</div><div class="pub-title lang-en">Black-Scholes Derivation</div><div class="pub-meta lang-pt">Dez capítulos, cinco abordagens · 33 referências</div><div class="pub-meta lang-en">Ten chapters, five approaches · 33 references</div></div><span class="status"><span class="lang-pt">texto didático</span><span class="lang-en">teaching text</span></span></div>
+        <div class="pub"><span class="pub-year">—</span><div><div class="pub-title lang-pt">Modelos de Estrutura a Termo</div><div class="pub-title lang-en">Term Structure Models</div><div class="pub-meta lang-pt">De Vasicek ao BGM/LMM · 55 referências</div><div class="pub-meta lang-en">From Vasicek to BGM/LMM · 55 references</div></div><span class="status"><span class="lang-pt">texto didático</span><span class="lang-en">teaching text</span></span></div>
+        <div class="pub"><span class="pub-year">—</span><div><div class="pub-title lang-pt">Equações Diferenciais Ordinárias</div><div class="pub-title lang-en">Ordinary Differential Equations</div><div class="pub-meta lang-pt">Sete métodos, dos fundamentos à aplicação econômica</div><div class="pub-meta lang-en">Seven methods, from foundations to applications</div></div><span class="status"><span class="lang-pt">texto didático</span><span class="lang-en">teaching text</span></span></div>
+        <div class="pub"><span class="pub-year">—</span><div><div class="pub-title lang-pt">Equações Diferenciais Parciais</div><div class="pub-title lang-en">Partial Differential Equations</div><div class="pub-meta lang-pt">Oito capítulos, incluindo aplicação a Black-Scholes</div><div class="pub-meta lang-en">Eight chapters, including a Black-Scholes application</div></div><span class="status"><span class="lang-pt">texto didático</span><span class="lang-en">teaching text</span></span></div>
+        <div class="pub"><span class="pub-year">—</span><div><div class="pub-title lang-pt">Precificação de Tesouro Direto</div><div class="pub-title lang-en">Tesouro Direto Pricing</div><div class="pub-meta lang-pt">Metodologia de quotas para títulos públicos</div><div class="pub-meta lang-en">Quota methodology for treasury bonds</div></div><span class="status">e-book</span></div>
+        <div class="pub"><span class="pub-year">—</span><div><div class="pub-title lang-pt">Educação Financeira Pessoal</div><div class="pub-title lang-en">Personal Financial Education</div><div class="pub-meta lang-pt">Oito capítulos com exercícios, da poupança ao planejamento de longo prazo</div><div class="pub-meta lang-en">Eight chapters with exercises, from saving to long-term planning</div></div><span class="status">e-book</span></div>
+      </div>
+
+      <div class="tab-panel" id="panel-artigos">
+        <div class="pub"><span class="pub-year">2026</span><div><div class="pub-title">NashUncertainty — <span class="lang-pt">Equilíbrio de Nash sob Incerteza Knightiana</span><span class="lang-en">Nash Equilibrium under Knightian Uncertainty</span></div><div class="pub-meta lang-pt">Arcabouço Dow–Werlang (DW94) · alvo: SoftwareX / JOSS</div><div class="pub-meta lang-en">Dow–Werlang (DW94) framework · target: SoftwareX / JOSS</div></div><span class="status wp">working paper</span></div>
+        <div class="pub"><span class="pub-year">2026</span><div><div class="pub-title lang-pt">Provisão de Bens Públicos sob Incerteza Knightiana</div><div class="pub-title lang-en">Public Goods Provision under Knightian Uncertainty</div><div class="pub-meta lang-pt">vcm-knightian · 19 testes, seis figuras · alvo: PET 2026 (FGV) / JPET</div><div class="pub-meta lang-en">vcm-knightian · 19 tests, six figures · target: PET 2026 (FGV) / JPET</div></div><span class="status wp">working paper</span></div>
+        <div class="pub"><span class="pub-year">2025–26</span><div><div class="pub-title lang-pt">Silicon Sampling: LLMs como Sujeitos Sintéticos</div><div class="pub-title lang-en">Silicon Sampling: LLMs as Synthetic Subjects</div><div class="pub-meta lang-pt">Metodologia para replicar experimentos clássicos com agentes sintéticos</div><div class="pub-meta lang-en">A methodology for replicating classic experiments with synthetic agents</div></div><span class="status wp">working paper</span></div>
+        <div class="pub"><span class="pub-year">2025–26</span><div><div class="pub-title lang-pt">GenAI-Econ Lab — Série WP-000 a WP-015</div><div class="pub-title lang-en">GenAI-Econ Lab — WP-000 to WP-015</div><div class="pub-meta lang-pt">Dilema do prisioneiro, ultimato, confiança, leilões, teoria do prospecto</div><div class="pub-meta lang-en">Prisoner's dilemma, ultimatum, trust, auctions, prospect theory</div></div><span class="status wp"><span class="lang-pt">série em andamento</span><span class="lang-en">ongoing series</span></span></div>
+        <div class="pub"><span class="pub-year">—</span><div><div class="pub-title lang-pt">O Imposto Inflacionário no Brasil</div><div class="pub-title lang-en">The Inflation Tax in Brazil</div><div class="pub-meta lang-pt">Metodologia Cysne (1993) e Cysne &amp; Coimbra-Lisboa (2004)</div><div class="pub-meta lang-en">Cysne (1993) and Cysne &amp; Coimbra-Lisboa (2004) methodology</div></div><span class="status note"><span class="lang-pt">nota de pesquisa</span><span class="lang-en">research note</span></span></div>
+      </div>
+
+      <div class="tab-panel" id="panel-software">
+        <div class="pub"><span class="pub-year">—</span><div><div class="pub-title">NashUncertainty</div><div class="pub-meta lang-pt">GUI Python (tkinter/matplotlib), seis jogos, suíte de 19 testes</div><div class="pub-meta lang-en">Python GUI (tkinter/matplotlib), six games, 19-test suite</div></div><span class="status sw"><span class="lang-pt">repositório</span><span class="lang-en">repository</span></span></div>
+        <div class="pub"><span class="pub-year">—</span><div><div class="pub-title">vcm-knightian</div><div class="pub-meta lang-pt">Simulação de bens públicos sob incerteza Knightiana</div><div class="pub-meta lang-en">Public-goods-under-Knightian-uncertainty simulation</div></div><span class="status sw"><span class="lang-pt">repositório</span><span class="lang-en">repository</span></span></div>
+        <div class="pub"><span class="pub-year">—</span><div><div class="pub-title">Panorama Financeiro</div><div class="pub-meta lang-pt">Inteligência diária de mercado para WIN/WDO</div><div class="pub-meta lang-en">Daily market intelligence for WIN/WDO futures</div></div><span class="status sw"><span class="lang-pt">sistema</span><span class="lang-en">system</span></span></div>
+        <div class="pub"><span class="pub-year">—</span><div><div class="pub-title lang-pt">Plataforma de Inteligência do Tesouro Direto</div><div class="pub-title lang-en">Tesouro Direto Intelligence Platform</div><div class="pub-meta lang-pt">FastAPI + React + SQLite</div><div class="pub-meta lang-en">FastAPI + React + SQLite</div></div><span class="status sw"><span class="lang-pt">plataforma</span><span class="lang-en">platform</span></span></div>
+        <div class="pub"><span class="pub-year">—</span><div><div class="pub-title lang-pt">Pipeline de Dados Macroeconômicos (BCB)</div><div class="pub-title lang-en">Central Bank of Brazil Data Pipeline</div><div class="pub-meta lang-pt">Aplicativo Streamlit para séries do Banco Central</div><div class="pub-meta lang-en">Streamlit app for Central Bank series</div></div><span class="status sw"><span class="lang-pt">aplicativo</span><span class="lang-en">app</span></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="term-panel" id="ensino">
+    <div class="term-titlebar"><span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>&nbsp;&nbsp;ls courses/</div>
+    <div class="term-body">
+      <p class="cmd"><span class="p">root@ufjf:~$</span> ls courses/</p>
+      <div class="card-grid">
+        <div class="card">
+          <span class="eyebrow"><span class="lang-pt">disciplina</span><span class="lang-en">course</span></span>
+          <h3><span class="lang-pt">Derivativos</span><span class="lang-en">Derivatives</span></h3>
+          <p class="lang-pt">Apreçamento, hedge e o instrumental de Black-Scholes e da estrutura a termo.</p>
+          <p class="lang-en">Pricing, hedging, and the Black-Scholes and term-structure toolkit.</p>
+        </div>
+        <div class="card">
+          <span class="eyebrow"><span class="lang-pt">disciplina</span><span class="lang-en">course</span></span>
+          <h3><span class="lang-pt">Apreçamento de Ativos</span><span class="lang-en">Asset Pricing</span></h3>
+          <p class="lang-pt">Modelos de apreçamento em condições de risco e de incerteza.</p>
+          <p class="lang-en">Asset-pricing models under risk and under uncertainty.</p>
+        </div>
+        <a class="card" href="cursos/ciencia-dados-ml-ia-economia-financas/">
+          <span class="eyebrow"><span class="lang-pt">portal do curso</span><span class="lang-en">course portal</span></span>
+          <h3><span class="lang-pt">Ciência de Dados, ML &amp; IA</span><span class="lang-en">Data Science, ML &amp; AI</span></h3>
+          <p class="lang-pt">Métodos computacionais e de aprendizado de máquina aplicados a economia e finanças.</p>
+          <p class="lang-en">Computational and machine-learning methods applied to economics and finance.</p>
+          <span class="card-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="term-panel" id="extensao">
+    <div class="term-titlebar"><span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>&nbsp;&nbsp;ps --extension</div>
+    <div class="term-body">
+      <p class="cmd"><span class="p">root@ufjf:~$</span> ps --extension</p>
+      <div class="card-grid">
+        <a class="card" href="extensao/quantecon/">
+          <span class="eyebrow">QuantEcon UFJF</span>
+          <h3><span class="lang-pt">Coordenação de projeto</span><span class="lang-en">Project coordination</span></h3>
+          <p class="lang-pt">Semana QuantEcon (30 jun – 2 jul 2026), minicursos, parceria com o INSIGHT/Fiocruz.</p>
+          <p class="lang-en">Semana QuantEcon (Jun 30 – Jul 2, 2026), short courses, partnership with Fiocruz's INSIGHT lab.</p>
+          <span class="card-arrow">↗</span>
+        </a>
+        <div class="card">
+          <span class="eyebrow">CAEX</span>
+          <h3><span class="lang-pt">Comissão de Extensão</span><span class="lang-en">Extension Commission</span></h3>
+          <p class="lang-pt">Regimento Interno e normas de créditos de extensão da Faculdade de Economia.</p>
+          <p class="lang-en">Internal bylaws and extension-credit rules for the School of Economics.</p>
+        </div>
+        <a class="card" href="extensao/ia-para-todos/">
+          <span class="eyebrow"><span class="lang-pt">curso de extensão (20h)</span><span class="lang-en">extension course (20h)</span></span>
+          <h3>IA para Todos</h3>
+          <p class="lang-pt">Para professores da rede pública, pequenos empreendedores, cooperados e idosos.</p>
+          <p class="lang-en">For public-school teachers, small entrepreneurs, cooperative members, and older adults.</p>
+          <span class="card-arrow">↗</span>
+        </a>
+        <a class="card" href="extensao/formacao-de-formadores/">
+          <span class="eyebrow"><span class="lang-pt">educação financeira</span><span class="lang-en">financial education</span></span>
+          <h3><span class="lang-pt">Formação de Formadores</span><span class="lang-en">Training the Trainers</span></h3>
+          <p class="lang-pt">Capacitação de formadores em educação financeira.</p>
+          <p class="lang-en">Training trainers in financial education.</p>
+          <span class="card-arrow">↗</span>
+        </a>
+        <a class="card" href="extensao/literacia-em-investimentos/">
+          <span class="eyebrow"><span class="lang-pt">educação financeira</span><span class="lang-en">financial education</span></span>
+          <h3><span class="lang-pt">Literacia em Investimentos</span><span class="lang-en">Investment Literacy</span></h3>
+          <p class="lang-pt">Educação financeira e literacia em investimentos para públicos sub-representados.</p>
+          <p class="lang-en">Financial education and investment literacy for underrepresented audiences.</p>
+          <span class="card-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="term-panel" id="contato">
+    <div class="term-titlebar"><span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>&nbsp;&nbsp;ping paulo.coimbra</div>
+    <div class="term-body">
+      <p class="cmd"><span class="p">root@ufjf:~$</span> ping paulo.coimbra</p>
+      <p class="lang-pt">Para colaborações acadêmicas, orientação, convites ou dúvidas sobre os projetos de extensão, escreva diretamente por e-mail.</p>
+      <p class="lang-en">For academic collaborations, advising, invitations, or questions about extension projects, write directly by email.</p>
+      <p style="margin-top:1.2rem;"><a class="btn btn-primary" href="mailto:paulo.coimbra@ufjf.br">paulo.coimbra@ufjf.br</a></p>
+      <ul class="link-list">
+        <li><a href="https://scholar.google.com/citations?user=2cQjpmQAAAAJ" target="_blank" rel="noopener"><span>Google Scholar<small>scholar.google.com</small></span><span>↗</span></a></li>
+        <li><a href="#" target="_blank" rel="noopener"><span>Currículo Lattes<small><span class="lang-pt">substituir pelo link real</span><span class="lang-en">replace with real link</span></small></span><span>↗</span></a></li>
+        <li><a href="#" target="_blank" rel="noopener"><span>ORCID<small><span class="lang-pt">substituir pelo link real</span><span class="lang-en">replace with real link</span></small></span><span>↗</span></a></li>
+        <li><a href="https://github.com/SEU-USUARIO/academic-archive" target="_blank" rel="noopener"><span>GitHub — academic-archive<small><span class="lang-pt">repositório de materiais</span><span class="lang-en">materials repository</span></small></span><span>↗</span></a></li>
+        <li><a href="https://github.com/SEU-USUARIO/site-academico" target="_blank" rel="noopener"><span><span class="lang-pt">Código-fonte deste site</span><span class="lang-en">Source code of this site</span><small><span class="lang-pt">substituir pelo link real</span><span class="lang-en">replace with real link</span></small></span><span>↗</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span class="lang-pt">© <span class="year"></span> Paulo C. Coimbra · UFJF — sessão encerrada com <a href="index.html">exit 0 → edição padrão</a></span>
+  <span class="lang-en">© <span class="year"></span> Paulo C. Coimbra · UFJF — session closed with <a href="index.html">exit 0 → standard edition</a></span>
+</footer>
+</div>
+
+<script src="assets/matrix-site.js"></script>
+</body>
+</html>
